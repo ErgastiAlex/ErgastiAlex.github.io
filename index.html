@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300|Ubuntu:500|Varela&display=swap"
+      rel="stylesheet"
+    />
+    <title>Alex | Resume</title>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <h1 class="header__logo">Alex</h1>
+        <div class="burger">
+          <svg viewBox="0 0 800 600">
+            <path
+              d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+              id="top"
+            ></path>
+            <path d="M300,320 L540,320" id="middle"></path>
+            <path
+              d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+              id="bottom"
+              transform="translate(480, 320) scale(1, -1) translate(-480, -318) "
+            ></path>
+          </svg>
+        </div>
+        <ul class="main-nav__link">
+          <li><a href="#profile">Profilo</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#experience">Esperienze</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <svg
+          viewBox="0 0 436 148"
+          class="logo"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M97.6311 141.12C96.0079 136.181 94.324 131.301 92.5794 126.481C90.8348 121.66 89.1516 116.721 87.5297 111.662L34.9732 111.056C33.2353 116.076 31.438 121.036 29.5815 125.935C27.8463 130.715 26.1111 135.496 24.3759 140.276L0.797489 140.004C5.63062 126.739 10.212 114.491 14.5417 103.26C18.8713 92.0294 23.0741 81.3971 27.15 71.3634C31.3458 61.331 35.4761 51.778 39.5409 42.7042C43.6057 33.6304 47.7891 24.678 52.0911 15.847L73.5097 16.0938C77.6072 25.0215 81.5832 34.068 85.4379 43.233C89.2926 52.398 93.1417 62.043 96.9853 72.1679C100.949 82.2942 104.966 93.0212 109.035 104.349C113.225 115.678 117.583 128.029 122.109 141.402L97.6311 141.12ZM62.0726 40.0836C59.2395 46.4114 55.9706 54.1142 52.2657 63.1922C48.6809 72.2715 44.9071 82.1286 40.9443 92.7637L81.9816 93.2365C78.2649 82.5129 74.6599 72.5107 71.1666 63.2299C67.6733 53.949 64.6419 46.2336 62.0726 40.0836Z"
+          />
+          <path
+            d="M190.231 143.987C183.753 143.792 178.362 143.01 174.057 141.64C169.873 140.272 166.534 138.373 164.042 135.945C161.551 133.396 159.787 130.315 158.748 126.703C157.831 122.972 157.399 118.767 157.453 114.087L158.702 5.73444L180.522 2.38558L179.28 110.198C179.249 112.838 179.404 115.06 179.743 116.864C180.202 118.67 180.964 120.239 182.029 121.571C183.095 122.783 184.524 123.76 186.315 124.5C188.228 125.123 190.623 125.63 193.498 126.023L190.231 143.987Z"
+          />
+          <path
+            d="M226.944 95.9866C227.039 87.7071 228.323 80.4614 230.795 74.2495C233.386 68.0389 236.746 62.9173 240.872 58.8846C245 54.7318 249.716 51.6659 255.019 49.6869C260.324 47.5879 265.736 46.5702 271.255 46.6337C284.215 46.783 294.248 50.9189 301.354 59.0413C308.581 67.1651 312.103 79.2065 311.919 95.1654C311.905 96.3653 311.829 97.7445 311.691 99.3031C311.675 100.743 311.6 102.062 311.466 103.261L249.37 102.545C249.883 110.112 252.455 116.022 257.086 120.275C261.839 124.41 268.715 126.53 277.714 126.633C282.994 126.694 287.799 126.27 292.13 125.359C296.581 124.451 300.072 123.471 302.604 122.42L305.279 140.272C304.072 140.858 302.385 141.499 300.217 142.194C298.17 142.77 295.764 143.282 292.998 143.731C290.352 144.3 287.466 144.747 284.342 145.071C281.218 145.395 278.037 145.538 274.797 145.501C266.517 145.406 259.332 144.123 253.24 141.653C247.149 139.062 242.149 135.584 238.239 131.219C234.33 126.734 231.45 121.54 229.598 115.638C227.747 109.617 226.862 103.066 226.944 95.9866ZM290.232 86.995C290.266 83.9952 289.879 81.1706 289.069 78.5211C288.261 75.7516 287.028 73.3972 285.37 71.458C283.834 69.4002 281.872 67.8175 279.485 66.7099C277.219 65.4837 274.466 64.8519 271.226 64.8146C267.866 64.7759 264.919 65.402 262.384 66.6929C259.85 67.8638 257.672 69.4588 255.848 71.4779C254.145 73.4984 252.798 75.8231 251.808 78.4518C250.817 81.0806 250.126 83.7728 249.734 86.5285L290.232 86.995Z"
+          />
+          <path
+            d="M389.718 81.1207L410.051 50.5729L432.91 50.8362L401.44 94.9366C407.822 103.411 413.904 112.001 419.684 120.709C425.585 129.297 430.413 137.393 434.165 144.997L410.587 144.725C409.533 142.433 408.123 139.837 406.356 136.936C404.711 133.917 402.886 130.836 400.882 127.692C399 124.43 396.997 121.227 394.873 118.083C392.749 114.938 390.683 111.974 388.675 109.191C384.413 114.542 380.204 120.494 376.048 127.046C372.014 133.48 368.648 139.202 365.95 144.211L343.631 143.954C345.473 140.375 347.677 136.56 350.243 132.509C352.81 128.459 355.558 124.35 358.486 120.183C361.416 115.897 364.404 111.671 367.453 107.506C370.622 103.222 373.729 99.1777 376.773 95.3725L346.156 49.8368L370.094 50.1126L389.718 81.1207Z"
+          />
+        </svg>
+
+        <p
+          class="type-writer close-tag open-tag"
+          data-wait="3000"
+          data-words='["FullStack Developer","Web Developer","BackEnd Developer"]'
+        ></p>
+        <div class="contact-me">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <span><a href="mailto:ergasti.alex@gmail.com">Contattami</a></span>
+        </div>
+      </section>
+      <section id="profile" class="profile">
+        <header class="header-section">
+          <h2>Profilo</h2>
+        </header>
+        <div class="profile__card-container">
+          <div class="profile__card fadeIn" data-threshold="0.5">
+            <p>
+              Ho studiato e conseguito un diploma da perito informatico all’ISII
+              G.Marconi di Piacenza e attualmente studio Ingegneria Informatica
+              al Politecnico di Milano.
+            </p>
+          </div>
+          <div class="profile__card fadeIn" data-threshold="0.5">
+            <div class="profile__info">
+              <label for="nome">Nome:</label>
+              <p id="nome">Alex</p>
+            </div>
+            <div class="profile__info">
+              <label for="Cognome">Cognome:</label>
+              <p id="Cognome">Ergasti</p>
+            </div>
+            <div class="profile__info">
+              <label for="eta">Età:</label>
+              <p id="eta"></p>
+            </div>
+            <div class="profile__info">
+              <label for="Residenza">Residenza:</label>
+              <p id="Residenza">Fiorenzuola D'arda 29017(PC)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skill" class="skill">
+        <header class="header-section">
+          <h2>Skills</h2>
+        </header>
+        <div class="skill__card-container">
+          <div class="skill__card fadeIn" data-threshold="0.5">
+            <h2>
+              HTML
+            </h2>
+            <p>
+              Ho utilizzato principalmente html per progetti personali. Conosco
+              HTML 5 e l’utillizzo della sua sintassi.
+            </p>
+          </div>
+
+          <div class="skill__card fadeIn" data-threshold="0.5">
+            <h2>
+              CSS
+            </h2>
+            <p>
+              Utilizzato per progetti personali. Lo sto tutt’ora studiando per
+              espanderne la mia conoscenza.
+            </p>
+          </div>
+          <div class="skill__card fadeIn" data-threshold="0.5">
+            <h2>
+              JS
+            </h2>
+            <p>
+              Utilizzato insieme ad html e css per progetti personali ho una
+              conoscenza di javascript buona ma non troppo approfondita
+            </p>
+          </div>
+          <div class="skill__card fadeIn" data-threshold="0.5">
+            <h2>
+              C#
+            </h2>
+            <p>
+              Il linguaggio che ho maggiormente usato, conosco lambda, delegate,
+              classi, interfaccia, ereditarietà e integrazione con EF. Mi trovo
+              sempre a mio agio
+            </p>
+          </div>
+          <div class="skill__card fadeIn" data-threshold="0.5">
+            <h2>
+              Angular
+            </h2>
+            <p>
+              Utilizzato per programmazione FE dove ho potuto apprezzarne
+              funzionalità e flessibilità. Conosco abbastanza bene Typescript e
+              Rx.js
+            </p>
+          </div>
+          <div class="skill__card fadeIn" data-threshold="0.5">
+            <h2>
+              SQL
+            </h2>
+            <p>
+              Utilizzato sempre per gestione di DB in BE. Mi trovo a mio agio
+              nella scrittura di stored procedure, anche se non conosco a fondo
+              tutte le possibili funzionalità
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="experience">
+        <header class="header-section">
+          <h2>Esperienze</h2>
+        </header>
+        <div class="experience__card-container">
+          <div class="experience__card">
+            <div class="experience__card-left">
+              <h2>Amada</h2>
+              <h3>Luglio 2018 - Novembre 2018</h3>
+              <p class="experience__card-left-footer">
+                <img src="icon/position.svg" alt="" />
+                Piacenza
+              </p>
+            </div>
+            <div class="experience__card-right">
+              <h2>Stage Scolastico</h2>
+              <p>
+                Sviluppo di web application basata su ASP.Net per gestione
+                magazzino interno.<br />
+                Sviluppo presentazione in Flash AS3 per fiera Rho Milano sulla
+                metalmeccanica.
+              </p>
+            </div>
+          </div>
+          <div class="experience__card">
+            <div class="experience__card-left">
+              <h2>H&S</h2>
+              <h3>Luglio 2018 - Novembre 2018</h3>
+              <p class="experience__card-left-footer">
+                <img src="icon/position.svg" alt="" />
+                Piacenza
+              </p>
+            </div>
+            <div class="experience__card-right">
+              <h2>FullStack Developer</h2>
+              <p>
+                Sviluppo di web application tramite framework Ext.Net basato su
+                ASP.Net con liguaggio C#. <br />
+                Sviluppo BackEnd basato su DB Microsoft SQL e API sviluppate con
+                ASP.Net.<br />
+                Utilizzo di Entity Framework per accesso e modifica dati su DB
+                tramite API.<br />
+                Sviluppo Applicativo android tramite Xamarin Forms con pattern
+                architetturale MVVM.
+              </p>
+            </div>
+          </div>
+          <div class="experience__card">
+            <div class="experience__card-left">
+              <h2>H&S</h2>
+              <h3>Luglio 2019 - Settembre 2019</h3>
+              <p class="experience__card-left-footer">
+                <img src="icon/position.svg" alt="" />
+                Piacenza
+              </p>
+            </div>
+            <div class="experience__card-right">
+              <h2>FullStack Developer</h2>
+              <p>
+                Sviluppo di web application tramite framework Angular con MVC<br />
+                Sviluppo BackEnd basato su DB Microsoft SQL e API sviluppate con
+                ASP.Net.<br />
+                Utilizzo di Entity Framework per accesso e modifica dati su DB
+                tramite API.
+              </p>
+            </div>
+          </div>
+          <div class="experience__card">
+            <div class="experience__card-left">
+              <h2>E-Pol</h2>
+              <h3>Settembre 2019 - Novembre 2019</h3>
+              <p class="experience__card-left-footer">
+                <img src="icon/position.svg" alt="" />
+                Piacenza
+              </p>
+            </div>
+            <div class="experience__card-right">
+              <h2>Programmatore C#</h2>
+              <p>
+                Sviluppo applicativi di sincronizzazione, aggiornamento e
+                mantenimento dati nel DB interno basato su Microsoft SQL.
+                <br />
+                Sviluppo di stored procedure per invio email e/o gestione dati
+                incogruenti su DB.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work"></section>
+    </main>
+    <footer>
+      <h2>Developed And Desing By Alex Ergasti</h2>
+      <a href="https://www.linkedin.com/in/alex-ergasti-8110b7173/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+          />
+        </svg>
+      </a>
+    </footer>
+    <script src="script/type.js"></script>
+    <script src="script/getEta.js"></script>
+    <script src="script/card.js"></script>
+    <script src="script/popup.js"></script>
+    <script src="script/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@import "variable";
+@import "navbar";
+@import "hero";
+@import "skill";
+@import "profile";
+@import "experience";
+@import "footer";
+
+.header-section {
+  width: 100%;
+  h2 {
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin: 1rem 20% 1rem 20%;
+    padding: 1rem;
+    border-bottom: 1px solid;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(5%);
+}
+.fadeIn__show {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 50%;
+  }
+}

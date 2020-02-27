@@ -1,0 +1,34 @@
+.skill {
+  min-height: 100vh;
+  @include flex(flex-start, center, column);
+}
+.skill__card-container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  align-items: flex-start;
+  grid-template-columns: repeat(3, 1fr);
+}
+.skill__card {
+  @include flex(center, center, column);
+
+  max-width: 30em;
+  margin: 2rem;
+  h2 {
+    padding: 1rem 0rem 3rem 0rem;
+    border-bottom: 1px solid;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 3rem 2rem 3rem;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .skill__card-container {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}

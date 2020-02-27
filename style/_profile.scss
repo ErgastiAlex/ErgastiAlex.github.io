@@ -1,0 +1,36 @@
+.profile {
+  min-height: 100vh;
+  @include flex(center, center, column);
+}
+.profile__card-container {
+  width: 80%;
+  @include flex(center, flex-start, row);
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.profile__card {
+  flex: 1 1 30rem;
+  @include flex(center, center, column);
+
+  max-width: 30rem;
+  margin: 2rem 5rem;
+
+  p {
+    text-align: center;
+  }
+}
+
+.profile__info {
+  @include flex(center, center, column);
+  margin: 1rem;
+  label {
+    font-size: var(--text);
+    font-size: "Open Sans";
+    font-weight: bold;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}

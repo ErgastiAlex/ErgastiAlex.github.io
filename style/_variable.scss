@@ -1,0 +1,48 @@
+:root {
+  --text: calc(2rem);
+  --header1: calc(2.5rem + 1vw);
+  --header2: calc(3rem + 1vw);
+  --big-text: 5rem;
+  --blue-color: #3c38fc;
+  --orange-color: #f9904a;
+  --bg-color: #82848a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: var(--header1);
+}
+
+h2 {
+  font-size: var(--header2);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+a,
+p,
+li {
+  font-size: var(--text);
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style-type: none;
+}
+/*
+
+
+
+*/

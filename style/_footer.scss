@@ -1,0 +1,14 @@
+footer {
+  padding: 2rem;
+  color: white;
+  min-height: 10vh;
+  background-color: black;
+  @include flex(space-evenly, center, row);
+  h2 {
+    font-size: var(--text);
+  }
+  svg {
+    width: 4rem;
+    fill: white;
+  }
+}

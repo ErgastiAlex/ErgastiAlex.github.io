@@ -1,0 +1,101 @@
+.main-head {
+  width: 100%;
+  min-height: 10vh;
+  background: rgba(0, 0, 0, 0.7);
+  nav {
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    @include flex(flex-start, center, row);
+  }
+}
+.header__logo {
+  flex: 1 1 40rem;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+
+.main-nav__link {
+  flex: 1 1 40rem;
+  @include flex(space-evenly, center, row);
+  a {
+    color: white;
+    font-size: var(--text);
+  }
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .main-head {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .main-nav__link {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0 at 100% 0);
+    transition: clip-path 1s;
+    background-color: black;
+    z-index: 1;
+    @include flex(space-between, center, column);
+    padding: 5rem;
+    z-index: 1;
+    li {
+      display: block;
+    }
+  }
+  .main-nav__toggle {
+    clip-path: circle(200% at 100% 0);
+  }
+  #top {
+    stroke-dasharray: 240 2000;
+    stroke-dashoffset: 0;
+  }
+  #bottom {
+    stroke-dasharray: 240 2000;
+    stroke-dashoffset: 0;
+    //1459.8094482421875stroke-dashoffset: 449.5;
+    //animation: strokea 1s forwards linear;
+  }
+  #middle {
+    stroke-dasharray: 240 550;
+    stroke-dashoffset: 0;
+  }
+  .toggle-tb {
+    stroke-dashoffset: -650 !important;
+  }
+  .toggle-m {
+    //selector specificy
+    stroke-dashoffset: -240 !important;
+  }
+  .burger {
+    position: relative;
+    display: block;
+    z-index: 2;
+    svg {
+      width: 8rem;
+      height: 8rem;
+      transform: translate(30%);
+
+      path {
+        stroke-width: 40px;
+        stroke-linecap: round;
+        stroke: white;
+        fill: transparent;
+        transition: all 1s;
+      }
+    }
+  }
+}
+
+@keyframes strokea {
+  to {
+    stroke-dashoffset: -650;
+  }
+}
