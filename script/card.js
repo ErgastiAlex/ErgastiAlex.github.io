@@ -11,6 +11,7 @@ let stackCard = function(element) {
 };
 
 //For each card section create stackCard animation
+
 for (let i = 0; i < cards.length; i++) {
   new stackCard(cards[i]);
 }
@@ -57,11 +58,13 @@ function Animate() {
       this.items[i].clientHeight;
 
     //if top is 0->No scrolling
-    if (scrolling > 0 && top != 0) {
-      this.items[i].style.transform =
-        "scale(" + scale + ") translateY(" + 3 * i + "rem)";
-    } else {
-      this.items[i].style.transform = "translateY(" + 3 * i + "rem)";
+    if (window.innerWidth > 700) {
+      if (scrolling > 0 && top != 0) {
+        this.items[i].style.transform =
+          "scale(" + scale + ") translateY(" + 3 * i + "rem)";
+      } else {
+        this.items[i].style.transform = "translateY(" + 3 * i + "rem)";
+      }
     }
     this.scrolling = false;
   }

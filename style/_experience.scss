@@ -1,5 +1,5 @@
 .experience {
-  margin: 1rem;
+  margin: 5rem 0rem;
 }
 .experience__card {
   border: 0.5px rgba(0, 0, 0, 0.1) solid;
@@ -50,5 +50,7 @@
 @media screen and (max-width: 708px) {
   .experience__card {
     flex-direction: column;
+    position: relative;
+    margin: 5rem auto;
   }
 }

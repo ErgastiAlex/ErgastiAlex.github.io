@@ -579,7 +579,7 @@ li {
 }
 
 .experience {
-  margin: 1rem;
+  margin: 5rem 0rem;
 }
 
 .experience__card {
@@ -651,6 +651,8 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
+    margin: 5rem auto;
   }
 }
 
